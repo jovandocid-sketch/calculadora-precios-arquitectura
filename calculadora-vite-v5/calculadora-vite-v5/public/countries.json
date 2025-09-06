@@ -1,0 +1,63 @@
+{
+  "CL": {
+    "name": "Chile",
+    "currency": "CLP",
+    "uf": true,
+    "note": "Basado en mercado chileno. UF precargable (manual por ahora).",
+    "ranges": {
+      "Vivienda unifamiliar": [
+        0.8,
+        0.9,
+        1.0
+      ],
+      "Vivienda unifamiliar premium": [
+        1.1,
+        1.25,
+        1.4
+      ],
+      "Interiorismo residencial (proyecto)": [
+        0.5,
+        1.0,
+        1.5
+      ],
+      "Regularización (genérica)": [
+        0.33,
+        0.39,
+        0.45
+      ],
+      "Recepción final – estándar": [
+        0.1,
+        0.125,
+        0.15
+      ]
+    }
+  },
+  "PE": {
+    "name": "Perú",
+    "currency": "PEN",
+    "uf": false,
+    "note": "Datos por país en preparación.",
+    "ranges": {}
+  },
+  "AR": {
+    "name": "Argentina",
+    "currency": "ARS",
+    "uf": false,
+    "note": "Datos por país en preparación.",
+    "ranges": {}
+  },
+  "BR": {
+    "name": "Brasil",
+    "currency": "BRL",
+    "uf": false,
+    "note": "Datos por país en preparación.",
+    "ranges": {}
+  },
+  "ES": {
+    "name": "España",
+    "currency": "EUR",
+    "uf": false,
+    "note": "Datos por país en preparación.",
+    "ranges": {}
+  }
+}
