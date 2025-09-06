@@ -2,13 +2,46 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Precios · UF/m² → UF & CLP</title>
-    <meta name="description" content="Simula el costo de tu proyecto de arquitectura en UF y CLP." />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/logo_joc.png" />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=TU-ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'TU-ID');
+    </script>
+    <style>
+      body{font-family: system-ui, sans-serif; margin:0; color:#111;}
+      .container{max-width: 980px; margin: 0 auto; padding: 20px;}
+      header{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom: 12px;}
+      header img{height:40px;}
+      h1{font-size: clamp(26px, 4.5vw, 44px); margin: 4px 0;}
+      h2{font-size: clamp(18px, 3vw, 26px); margin: 0 0 16px; color:#444;}
+      .card{border:1px solid #dcdcdc; border-radius: 12px; padding: 14px; background:#fff;}
+      label{font-size:14px; opacity:.9;}
+      input, select{width:100%; padding:12px; border:1px solid #dcdcdc; border-radius: 12px; font-size:16px;}
+      .grid{display:grid; gap:12px;}
+      .grid-2{grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));}
+      .results{display:grid; gap:12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin-top: 12px;}
+      details{border:1px solid #ddd; border-radius: 12px; padding: 10px 12px; background:#fafafa; margin-top:10px;}
+      summary{cursor:pointer; font-weight:600;}
+      .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;}
+      .chip{border:1px solid #dcdcdc; border-radius:999px; padding:8px 12px; background:#fff; font-size:14px;}
+      .banner{margin-top:16px; border:1px dashed #bbb; border-radius:12px; padding:14px; background:#f9fbff; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px;}
+      footer{margin: 22px 0 10px; font-size:13px; display:flex; align-items:center; gap:10px; justify-content:space-between; flex-wrap:wrap;}
+      .brand{display:flex; align-items:center; gap:10px;}
+      .brand img{height:20px;}
+      .note{font-size:13px; opacity:.8}
+      .muted{opacity:.7}
+      .disabled{opacity:.6; pointer-events:none; user-select:none;}
+      a.button{display:inline-block; padding:10px 14px; border-radius:10px; background:#111; color:#fff; text-decoration:none;}
+    </style>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
